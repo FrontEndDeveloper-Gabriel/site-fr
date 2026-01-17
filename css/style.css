@@ -1,0 +1,653 @@
+body {
+	background-color: #282828;
+	color: #000;
+}
+
+.cabecalho {
+	height: 150px;
+	background-color: #e6e6e6;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 290px 0px 50px;
+	border-bottom: 3px solid #000;
+}
+
+.cabecalho .logo {
+	display: flex;
+	gap: 20px;
+}
+
+.cabecalho .menu {
+	display: flex;
+	gap: 30px;
+}
+
+.menu>li {
+	position: relative;
+}
+
+.cabecalho .menu li a {
+	padding: 30px;
+	font-weight: bolder;
+	font-size: 20px;
+	text-decoration: none;
+	display: block;
+}
+
+.cabecalho .menu li a:hover {
+	border-bottom: 1px solid;
+}
+
+.cabecalho .menu li ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #e6e6e6;
+	border: 1px solid #000;
+	min-width: 200px;
+	z-index: 1000;
+	flex-direction: column;
+}
+
+.cabecalho .menu li:hover>ul {
+	display: flex;
+}
+
+.cabecalho .menu-2 {
+	display: flex;
+	gap: 30px;
+}
+
+.cabecalho .menu-2 li a {
+	padding: 30px;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+.cabecalho .menu-2 li a:hover {
+	border-bottom: 1px solid;
+}
+
+.home {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 1px solid #ffffff;
+}
+
+.home video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	object-fit: cover;
+	z-index: 0;
+}
+
+.home::after {
+	background: rgba(0, 0, 0, 0.473);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+
+.home .informacoes {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 32px;
+	padding: 80px 40px;
+	max-width: 780px;
+	height: 100%;
+	color: white;
+}
+
+.home .informacoes .titulo {
+	font-size: 50px;
+}
+
+.home .informacoes .texto {
+	font-size: 18px;
+	line-height: 1.6;
+	max-width: 900px;
+}
+
+.home .informacoes .texto1 {
+	font-size: 22px;
+	line-height: 1.6;
+	font-style: italic;
+}
+
+.home .btn-acessar {
+	border: 0.5px solid rgba(255, 255, 255, 0.1);
+	border-radius: 4px;
+	font-size: 28px;
+	text-align: center;
+	padding: 20px 40px;
+	text-transform: uppercase;
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #fff;
+	max-width: 500px;
+	width: 100%;
+	transition: all 0.3s ease-in;
+}
+
+.btn-acessar:hover {
+	background-color: #4FCE5D;
+	color: #000;
+	cursor: pointer;
+}
+
+.sobre-a-empresa {
+	position: relative;
+	min-height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 80px 40px;
+	color: white;
+	text-align: center;
+	z-index: 0;
+	border-bottom: 1px solid #ffffff;
+}
+
+.sobre-a-empresa video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 0;
+}
+
+.sobre-a-empresa::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.473);
+	z-index: 0;
+}
+
+.sobre-a-empresa .titulo {
+	font-size: 48px;
+	margin-bottom: 32px;
+	position: relative;
+	z-index: 1;
+	top: -50px;
+}
+
+.texto-empresa {
+	max-width: 900px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+	top: -50px;
+}
+
+.texto-empresa .titulo-da-empresa {
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.texto-empresa img {
+	max-width: 400px;
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
+
+.texto-empresa .texto-sobre {
+	font-size: 18px;
+	line-height: 1.6;
+	max-width: 700px;
+}
+
+.secao-natal {
+	display: flex;
+	position: relative;
+	min-height: calc(455vh - 80px);
+	border-bottom: 1px solid #ffffff;
+	background-image: url("/img/background-natalino.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.secao-natal img {
+	object-fit: cover;
+	width: 100%;
+	height: auto;
+}
+
+.secao-natal .titulo {
+	position: absolute;
+	top: 30px;
+	left: 655px;
+	transform: translateX(-40%);
+	font-size: 45px;
+	font-weight: 700;
+	color: #ffffff;
+	z-index: 2;
+}
+
+.secao-natal .imagens-videos-natal {
+	position: absolute;
+	display: flex;
+	top: 150px;
+	flex-direction: column;
+	align-items: center;
+	right: 180px;
+	background-color: rgba(83, 82, 82, 0.589);
+	color: white;
+	width: 73%;
+	border-radius: 10px;
+	padding: 40px;
+	gap: 40px;
+}
+
+.secao-natal .imagens-videos-natal .subtitulo-secao-natal {
+	color: white;
+	font-size: 37px;
+	padding: 10px 20px;
+}
+
+.secao-natal .imagens-videos-natal .catalogo-natal {
+	color: white;
+	font-size: 25px;
+}
+
+.carousel-container-imagem {
+	position: relative;
+	top: -30px;
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+	padding: 20px 0;
+	overflow-x: auto;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+	scrollbar-width: none;
+}
+
+.carousel-track-imagem {
+	display: flex;
+	transition: transform 0.4s ease;
+	gap: 20px;
+}
+
+.carousel-track-video-natal,
+.carousel-track-imagem {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.carousel-item {
+	flex: 0 0 auto;
+}
+
+.carousel-container-video-natal {
+	position: relative;
+	width: 1100px;
+	top: -30px;
+	max-width: 1100px;
+	margin: auto;
+	padding: 10px 90px;
+	left: -110px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+	scrollbar-width: none;
+}
+
+.carousel-track-video-natal {
+	display: flex;
+	transition: transform 0.4s ease;
+	gap: 20px;
+}
+
+.carousel-item {
+	flex: 0 0 auto;
+	width: 100%;
+	max-width: 300px;
+}
+
+.carousel-item video {
+	width: 100%;
+	display: flex;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	flex: 0 0 auto;
+}
+
+.carousel-item img {
+	width: 100%;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item .subtitulo {
+	color: white;
+	text-align: center;
+}
+
+.arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 32px;
+	background: rgb(255, 136, 0);
+	border: none;
+	color: white;
+	cursor: pointer;
+	z-index: 1;
+	padding: 10px 16px;
+	border-radius: 50%;
+}
+
+.arrow-left {
+	left: 10px;
+}
+
+.arrow-right {
+	right: 10px;
+}
+
+.arrow:hover {
+	background: rgba(0, 0, 0, 0.7);
+	color: white;
+}
+
+.secao-natal .imagens-videos-natal .texto-sobre {
+	text-align: center;
+	font-weight: bolder;
+}
+
+.secao-namoro-casamento {
+	display: flex;
+	position: relative;
+	min-height: calc(220vh - 80px);
+	border-bottom: 1px solid #ffffff;
+	background-image: url("/img/background-namoro-casamento.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.secao-namoro-casamento img {
+	object-fit: cover;
+	width: 100%;
+	height: auto;
+}
+
+.secao-namoro-casamento .titulo {
+	position: absolute;
+	top: 30px;
+	left: 630px;
+	transform: translateX(-40%);
+	font-size: 45px;
+	font-weight: 700;
+	color: #ffffff;
+	z-index: 2;
+}
+
+.secao-namoro-casamento .imagens-videos-namoro-casamento {
+	position: absolute;
+	display: flex;
+	top: 150px;
+	flex-direction: column;
+	align-items: center;
+	right: 210px;
+	background-color: rgba(83, 82, 82, 0.589);
+	color: white;
+	width: 66%;
+	border-radius: 10px;
+	padding: 40px;
+	gap: 40px;
+}
+
+.secao-namoro-casamento .imagens-videos-namoro-casamento .subtitulo-secao-namoro-casamento {
+	color: white;
+	font-size: 37px;
+	padding: 10px 20px;
+}
+
+.secao-namoro-casamento .imagens-videos-namoro-casamento .catalogo-namoro-casamento {
+	color: white;
+	font-size: 25px;
+}
+
+.carousel-container-imagem {
+	position: relative;
+	top: -30px;
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+	padding: 20px 0;
+}
+
+.carousel-track-imagem {
+	display: flex;
+	transition: transform 0.4s ease;
+	gap: 20px;
+}
+
+.carousel-track-video-namoro-casamento,
+.carousel-track-imagem {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.carousel-item {
+	flex: 0 0 auto;
+}
+
+.carousel-container-video-namoro-casamento {
+	position: relative;
+	width: 1000px;
+	top: -30px;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+	padding: 10px 90px;
+}
+
+.carousel-track-video-namoro-casamento {
+	display: flex;
+	transition: transform 0.4s ease;
+	gap: 20px;
+}
+
+.carousel-item {
+	flex: 0 0 auto;
+	width: 100%;
+	max-width: 300px;
+}
+
+.carousel-item video {
+	width: 100%;
+	display: flex;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	flex: 0 0 auto;
+}
+
+.carousel-item img {
+	width: 100%;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item .subtitulo {
+	color: white;
+	text-align: center;
+}
+
+.arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 32px;
+	background: rgb(255, 136, 0);
+	border: none;
+	color: white;
+	cursor: pointer;
+	z-index: 1;
+	padding: 10px 16px;
+	border-radius: 50%;
+}
+
+.arrow-left {
+	left: 10px;
+}
+
+.arrow-right {
+	right: 10px;
+}
+
+.arrow:hover {
+	background: rgba(0, 0, 0, 0.7);
+	color: white;
+}
+
+.secao-namoro-casamento .imagens-videos-namoro-casamento .texto-sobre {
+	text-align: center;
+	font-weight: bolder;
+}
+
+.rodape {
+	background-color: #e6e6e6c5;
+	color: black;
+	text-align: center;
+	padding: 40px 20px 20px;
+	font-size: 20px;
+}
+
+.rodape .icones-redes-sociais a {
+	margin: 0 10px;
+	display: inline-block;
+	color: black;
+	background: white;
+	color: black;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 50%;
+	font-size: 20px;
+	text-align: center;
+	transition: background 0.3s;
+}
+
+.rodape .icones-redes-sociais a:hover {
+	background-color: black;
+	color: white;
+}
+
+.rodape .endereco,
+.rodape .contato {
+	margin-top: 15px;
+	font-size: 20px;
+}
+
+.rodape .contato i {
+	margin-right: 8px;
+}
+
+.rodape .logo {
+	margin-top: 20px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.rodape-bottom {
+	background-color: #14161f;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 30px;
+	font-size: 12px;
+	flex-wrap: wrap;
+}
+
+.rodape-borda a {
+	text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+	.rodape-borda {
+		flex-direction: column;
+		text-align: center;
+		gap: 5px;
+		font-size: 17px;
+	}
+	
+	.rodape .endereco,
+	.rodape .contato {
+		margin-top: 15px;
+		font-size: 17px;
+	}
+}
+
+.botao-flutuante {
+	position: fixed;
+	display: flex;
+	bottom: 20px;
+	left: 10px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 45px;
+	color: white;
+	background-color: transparent;
+	text-transform: uppercase;
+	transition: all 0.3s ease-in;
+}
+
+.botao-whatsapp {
+	position: fixed;
+	display: flex;
+	bottom: 20px;
+	right: 10px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	object-fit: cover;
+	z-index: 0;
+	background-color: transparent;
+	color: #fff;
+	text-transform: uppercase;
+	transition: all 0.3s ease-in;
+}
+
+.botao-flutuante:hover {
+	background-color: #ffffff;
+	color: #000;
+	cursor: pointer;
+}
+
+.botao-whatsapp:hover {
+	background-color: #4FCE5D;
+	color: #000;
+	cursor: pointer;
+}
