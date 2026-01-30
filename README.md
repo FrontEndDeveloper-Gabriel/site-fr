@@ -4,8 +4,8 @@
 
 ## 📖 About
 ```ascii
-> A freelance website I developed for a client, focused on promoting event and structure services, featuring a
-  responsive layout and compatibility with major web browsers.
+> A freelance website I developed for a client, focused on promoting event and structure services,
+  featuring a responsive layout and compatibility with major web browsers.
 ```
 
 <br>
