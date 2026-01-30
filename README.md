@@ -1,9 +1,35 @@
-# SITE - FR - EVENTOS & ESTRUTURAS
+# 💻 FR - EVENTOS & ESTRUTURAS
 
-<h3>Introdução</h3> 
-Um site freelancer que desenvolvi para um cliente. <br>
+<br>
 
-# <h3>Requisitos: <br>
-● Acessar em navegadores como o <strong>Chrome, Edge, FireFox</strong> e entre outros; <br>
-● Link de acesso: <strong>https://fr-eventos-estruturas.netlify.app/</strong>
-</h3>
+## 📖 About
+```ascii
+> A freelance website I developed for a client, focused on promoting event and structure services, featuring a
+  responsive layout and compatibility with major web browsers.
+```
+
+<br>
+
+## 📌 Requeriments
+ ● Accessible in browsers such as **Chrome, Edge, Firefox,** among others; <br>
+ ● Access link: **https://fr-eventos-estruturas.netlify.app/**
+ 
+<br>
+
+## 🛠️ Tech Stack
+
+[![Stack](https://skillicons.dev/icons?i=html,css,js)](https://skillicons.dev)
+
+<br>
+
+---
+<div align = "center">
+<img src = "/give_a_star.png" width = "594" height = "168">
+</div>
+
+<br>
+
+<div align = "center">
+ Created by <a href = "https://github.com/FrontEndDeveloper-Gabriel/"> Gabriel Ribeiro</a> 👨‍💻
+</div>
+
